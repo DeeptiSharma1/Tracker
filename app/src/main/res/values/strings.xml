@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GoogleTracker</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_user__login">User_Login</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registeration">Registeration</string>
+    <string name="title_activity_testactivity">testactivity</string>
+    <string name="title_activity_linear_layout">LinearLayout</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_creditcard_detail">CreditcardDetail</string>
+    <string name="title_activity_hideimage">Hideimage</string>
+    <string name="title_activity_sort_list">SortList</string>
+    <string name="title_activity_calender_ex">CalenderEx</string>
+    <string name="title_activity_calender2">Calender2</string>
+    <string name="title_activity_ex">ex</string>
+    <string name="title_activity_list_view_ex">ListViewEx</string>
+    <string name="title_activity_grid_view_ex">GridViewEx</string>
+    <string name="title_activity_custom_list_view_ex">CustomListViewEx</string>
+    <string name="title_activity_custom_grid_view_ex">CustomGridViewEx</string>
+</resources>
