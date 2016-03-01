@@ -64,21 +64,14 @@
         <activity
             android:name=".SortList"
             android:label="@string/title_activity_sort_list" >
-
         </activity>
         <activity
             android:name=".CalenderEx"
             android:label="@string/title_activity_calender_ex" >
-
         </activity>
         <activity
             android:name=".Calender2"
             android:label="@string/title_activity_calender2" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ex"
@@ -87,22 +80,33 @@
         <activity
             android:name=".ListViewEx"
             android:label="@string/title_activity_list_view_ex" >
-
         </activity>
         <activity
             android:name=".GridViewEx"
             android:label="@string/title_activity_grid_view_ex" >
-
-
         </activity>
         <activity
             android:name=".CustomListViewEx"
             android:label="@string/title_activity_custom_list_view_ex" >
-
         </activity>
         <activity
             android:name=".CustomGridViewEx"
             android:label="@string/title_activity_custom_grid_view_ex" >
+        </activity>
+        <activity
+            android:name=".SearchWord"
+            android:label="@string/title_activity_search_word" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity
+            android:name=".IntentExample"
+            android:label="@string/title_activity_intent_example" >
 
         </activity>
     </application>

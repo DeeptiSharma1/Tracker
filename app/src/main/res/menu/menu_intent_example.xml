@@ -1,14 +1,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.saurabhsr.tracker.LoginScreen">
+    tools:context="com.example.saurabhsr.tracker.IntentExample">
 
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+        android:orderInCategory="102" app:showAsAction="never" />
 
     <item android:id="@+id/action_send"
         android:title="Send"
+        android:orderInCategory="100"
         app:showAsAction="ifRoom"
         android:icon="@android:drawable/ic_menu_send"/>
+
+    <item android:id="@+id/action_Login"
+        android:title="Log-Out"
+        android:orderInCategory="102"
+        android:icon="@drawable/pic1"
+        app:showAsAction="always"></item>
+
 
 </menu>

@@ -1,14 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.saurabhsr.tracker.LoginScreen">
-
+    tools:context="com.example.saurabhsr.tracker.SearchWord">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 
-    <item android:id="@+id/action_send"
-        android:title="Send"
-        app:showAsAction="ifRoom"
-        android:icon="@android:drawable/ic_menu_send"/>
-
+    <item android:id="@+id/action_TextColor" android:title="Text Color"
+        android:orderInCategory="101" app:showAsAction="always" />
 </menu>

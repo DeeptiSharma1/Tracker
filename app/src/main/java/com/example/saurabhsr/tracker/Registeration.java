@@ -5,14 +5,23 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 
 
 public class Registeration extends ActionBarActivity {
 
+    EditText messge;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registeration);
+
+        Bundle extras = getIntent().getExtras();
+
+        if (extras != null) {
+            String name = extras.getString("name");
+
+        }
     }
 
     @Override

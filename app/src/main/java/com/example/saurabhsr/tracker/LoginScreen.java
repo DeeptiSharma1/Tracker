@@ -1,5 +1,6 @@
 package com.example.saurabhsr.tracker;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -24,7 +25,7 @@ public class LoginScreen extends ActionBarActivity {
          password = (EditText) findViewById(R.id.pwd);
         //String Email=username.getText().toString();
 
-        Button Login = (Button) findViewById(R.id.Btn_login1);
+        final Button Login = (Button) findViewById(R.id.Btn_login1);
 
          btnclear =(Button)findViewById(R.id.btnClear);
 
@@ -42,6 +43,10 @@ public class LoginScreen extends ActionBarActivity {
             public void onClick(View v) {
 
                 if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
+
+                    Intent logi=new Intent(LoginScreen.this,Registeration.class);
+                    logi.putExtra("name", "admin");
+                    startActivity(logi);
 
                     //correcct password
                     Toast.makeText(LoginScreen.this, "Correct Password", Toast.LENGTH_LONG).show();

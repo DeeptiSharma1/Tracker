@@ -19,4 +19,6 @@
     <string name="title_activity_grid_view_ex">GridViewEx</string>
     <string name="title_activity_custom_list_view_ex">CustomListViewEx</string>
     <string name="title_activity_custom_grid_view_ex">CustomGridViewEx</string>
+    <string name="title_activity_search_word">SearchWord</string>
+    <string name="title_activity_intent_example">IntentExample</string>
 </resources>
