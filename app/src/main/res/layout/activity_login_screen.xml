@@ -14,8 +14,7 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
        android:hint="Please enter Email"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
         android:background="@color/white"
         android:gravity="center"
         android:outlineProvider="bounds"
@@ -28,8 +27,7 @@
         android:hint="Password"
         android:ems="10"
         android:layout_marginTop="41dp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+
         android:background="@color/white"
         android:outlineProvider="bounds"
 
@@ -37,35 +35,28 @@ android:gravity="center"
         android:layout_below="@+id/email"
         android:id="@+id/pwd"
          />
+
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="Login"
         android:ems="10"
+        android:layout_marginTop="89dp"
         android:id="@+id/Btn_login1"
-        android:layout_below="@+id/pwd"
-        android:layout_marginBottom="45dp"
-        android:layout_alignParentBottom="true"
-        />
+        android:layout_below="@+id/pwd" />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New RadioButton"
-        android:id="@+id/radioButton"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+
 
 
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Clear"
+        android:text="Register"
         android:id="@+id/btnClear"
-        android:layout_alignBottom="@+id/Btn_login1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:ems="10"
+
+        android:layout_below="@+id/Btn_login1"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

@@ -44,6 +44,9 @@
         <activity
             android:name=".Registeration"
             android:label="@string/title_activity_registeration" >
+
+
+
         </activity>
         <activity
             android:name=".LinearLayout"
@@ -52,6 +55,11 @@
         <activity
             android:name=".LoginScreen"
             android:label="@string/title_activity_login_screen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".CreditcardDetail"
@@ -96,11 +104,7 @@
         <activity
             android:name=".SearchWord"
             android:label="@string/title_activity_search_word" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
 
         </activity>

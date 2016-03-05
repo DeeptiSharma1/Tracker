@@ -1,6 +1,7 @@
 package com.example.saurabhsr.tracker;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,11 +11,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.StringTokenizer;
+
 
 public class LoginScreen extends ActionBarActivity {
-    EditText username,password;
+    EditText username,txtpassword;
 
     Button btnclear;
+
+    DBHelper dbAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +27,10 @@ public class LoginScreen extends ActionBarActivity {
         setContentView(R.layout.activity_login_screen);
 
         username = (EditText) findViewById(R.id.email);
-         password = (EditText) findViewById(R.id.pwd);
+         txtpassword = (EditText) findViewById(R.id.pwd);
         //String Email=username.getText().toString();
+
+        dbAdapter=new DBHelper(this);
 
         final Button Login = (Button) findViewById(R.id.Btn_login1);
 
@@ -32,7 +39,8 @@ public class LoginScreen extends ActionBarActivity {
         btnclear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+            Intent regUntent=new Intent(LoginScreen.this,Registeration.class);
+                startActivity(regUntent);
                 Toast.makeText(LoginScreen.this,"U Pressed Clear",Toast.LENGTH_LONG).show();
             }
         });
@@ -41,18 +49,23 @@ public class LoginScreen extends ActionBarActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String userName=username.getText().toString();
+                String password = txtpassword.getText().toString();
 
-                if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
+// fetch the Password form database for respective user name
+                dbAdapter.open();
 
-                    Intent logi=new Intent(LoginScreen.this,Registeration.class);
-                    logi.putExtra("name", "admin");
-                    startActivity(logi);
+                String storedPassword=  dbAdapter.getSinlgeEntry(userName);
+        dbAdapter.close();
+// check if the Stored password matches with Password entered by user
+                if(password.equals(storedPassword))
+                {
+                    Toast.makeText(LoginScreen.this, "Congrats: Login Successfull", Toast.LENGTH_LONG).show();
 
-                    //correcct password
-                    Toast.makeText(LoginScreen.this, "Correct Password", Toast.LENGTH_LONG).show();
-                } else {
-                    //wrong password
-                    Toast.makeText(LoginScreen.this,"InCorrect Password",Toast.LENGTH_LONG).show();
+                }
+                else
+                {
+                    Toast.makeText(LoginScreen.this, "User Name or Password does not match", Toast.LENGTH_LONG).show();
                 }
             }
         });

@@ -74,7 +74,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/editText"
         android:width="300dp"
@@ -83,7 +83,7 @@
         android:layout_alignStart="@+id/EditText_RegPwd" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/btn_Reg"
@@ -91,6 +91,16 @@
         android:layout_toRightOf="@+id/TextView_Username"
         android:layout_toEndOf="@+id/TextView_Username"
         android:layout_marginBottom="66dp"
+        android:textSize="16dp" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Record"
+        android:id="@+id/btn_Delete"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/TextView_Username"
+        android:layout_toEndOf="@+id/TextView_Username"
+        android:layout_marginBottom="16dp"
         android:textSize="16dp" />
 
 </RelativeLayout>
