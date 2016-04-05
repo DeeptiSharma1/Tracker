@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!--
  The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but are recommended.
@@ -44,9 +46,6 @@
         <activity
             android:name=".Registeration"
             android:label="@string/title_activity_registeration" >
-
-
-
         </activity>
         <activity
             android:name=".LinearLayout"
@@ -55,11 +54,6 @@
         <activity
             android:name=".LoginScreen"
             android:label="@string/title_activity_login_screen" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".CreditcardDetail"
@@ -104,15 +98,85 @@
         <activity
             android:name=".SearchWord"
             android:label="@string/title_activity_search_word" >
-
-
-
         </activity>
         <activity
             android:name=".IntentExample"
             android:label="@string/title_activity_intent_example" >
+        </activity>
+        <activity
+            android:name=".ExSharedPref"
+            android:label="@string/title_activity_ex_shared_pref" >
+        </activity>
+        <activity
+            android:name=".EXAsynkTask"
+            android:label="@string/title_activity_exasynk_task" >
+        </activity>
+        <activity
+            android:name=".FragmentEx"
+            android:label="@string/title_activity_fragment_ex" >
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name=".ThreadExample"
+            android:label="@string/title_activity_thread_example" >
+        </activity>
+        <activity
+            android:name=".HandlerEx"
+            android:label="@string/title_activity_handler_ex" >
+        </activity>
+        <activity
+            android:name=".BroadCastRcvrExample"
+            android:label="@string/title_activity_broad_cast_rcvr_example" >
 
         </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.acadgildt.CUSTOM_INTENT" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".CustomReiverExampe"
+            android:label="@string/title_activity_custom_reiver_exampe" >
+
+        </activity>
+        <activity
+            android:name=".BrocstWithNotification"
+            android:label="@string/title_activity_brocst_with_notification" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".BroadcastManager"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".NotificationView"
+            android:label="@string/title_activity_notification_view" >
+        </activity>
+
+        <receiver
+            android:name=".BrodCastRcvr"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
     </application>
 
 </manifest>

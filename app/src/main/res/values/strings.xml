@@ -21,4 +21,17 @@
     <string name="title_activity_custom_grid_view_ex">CustomGridViewEx</string>
     <string name="title_activity_search_word">SearchWord</string>
     <string name="title_activity_intent_example">IntentExample</string>
+    <string name="title_activity_ex_shared_pref">ExSharedPref</string>
+    <string name="title_activity_exasynk_task">EXAsynkTask</string>
+    <string name="title_activity_fragment_ex">FragmentEx</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_thread_example">ThreadExample</string>
+    <string name="title_activity_handler_ex">HandlerEx</string>
+    <string name="title_activity_broad_cast_rcvr_example">BroadCastRcvrExample</string>
+    <string name="title_activity_custom_reiver_exampe">CustomReiverExampe</string>
+    <string name="title_activity_brocst_with_notification">BrocstWithNotification</string>
+    <string name="title_activity_notification_view">NotificationView</string>
 </resources>

@@ -1,30 +1,23 @@
 package com.example.saurabhsr.tracker;
 
-import android.app.ActionBar;
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class ex extends ActionBarActivity {
+public class TestActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ex);
-
-
-
+        setContentView(R.layout.activity_test);
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_ex, menu);
+        getMenuInflater().inflate(R.menu.menu_test, menu);
         return true;
     }
 
@@ -40,11 +33,6 @@ public class ex extends ActionBarActivity {
             return true;
         }
 
-        if(id==R.id.action_home)
-        {
-            Intent exintet=new Intent(ex.this,IntentExample.class);
-            startActivity(exintet);
-        }
         return super.onOptionsItemSelected(item);
     }
 }
